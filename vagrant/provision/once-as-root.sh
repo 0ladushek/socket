@@ -67,3 +67,12 @@ echo "Done!"
 
 info "Install composer"
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+info "Install Redis"
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+cd
+apt install -y redis-server
+echo "Done!"

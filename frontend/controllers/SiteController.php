@@ -72,9 +72,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        Yii::$app->redis->set('mykey', 'some value');
-//        echo Yii::$app->redis->get('mykey');
-//        die;
         return $this->render('index');
     }
 
